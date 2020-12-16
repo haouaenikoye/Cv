@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jquery.ripples.js"></script>
+		<script src="functions.js"></script>
+		<link href="googleFonts.css" rel="stylesheet">
+		<link href="mainStyle.css" media="screen" rel="stylesheet">
+		<link href="print.css" media="print" rel="stylesheet">
+		<link rel="icon" href="cerveaux.png" type="image/png">
+		<title>Idrissa Enikoye Haoua</title>
+	</head>
+	<body>
+		<div id="body" class="jquery-ripples">
+			<div id="semi">
+				<div id="howToBG">
+					<div id="howTo">
+						<h1>Idrissa Enikoye Haoua</h1>
+						<h2>CV professionnel</h2>
+						<img src="Avatar.png" alt="Avatar">
+						<p>Bienvenue sur mon Cv <a href="">personnel</a>.
+							<br><br><br>
+							<br><br><br>
+							Ce site Web a été conçu comme un CV pour montrer ce que je fais. J'adore la cybersécurité et tous ce qui concerne les codes. Je suis formé sous la direction de Abil Houssein,Mes amis de Codeloccol et mon cher Tonton Google. Dans mon temps libre, je recherche des vulnérabilités sur les applications Web...bref<br></p>
+							<br><br><br>
+						<p>Cliquez à tout moment sur l'icône d'impression pour afficher la version imprimable </p>
+						<br><br><br>
+						<p>S'amuser</p>
+						<button id="startGame" onclick="startGame();">Cliquez pour commencer</button>
+					</div>
+				</div>
+				<div id="mobileAvatar" class="avatar"></div>
+				<div id="printAvatar" class="avatar"></div>
+				<div id="mobileTitle">
+					<h1>Mon curiculuim vitae</h1>
+					<p>Veuillez visiter ce site sur un ordinateur ou faire pivoter votre écran pour une expérience complète</p>
+				</div>
+				<div id="printTitle">
+					<h1>Idrissa Enikoye Haoua<br></h1>
+					<p>Veuillez visiter <a href="">mon Cv</a> sur un ordinateur pour une expérience complète</p>
+				</div>
+				<div onclick="window.print();">
+					<div class="printer"></div>
+					<div id="printCaption" style="text-align:center">cliquez pour imprimer</div>
+				</div>
+				<div class="detail" id="basicInfo">
+					<span class="return" onmouseover="hideInfo('basicInfo');">Retour </span>
+					<div class="detailContent">
+						<h1>Mes informations de base</h1>
+						<h2>Moi... En un mot</h2>
+						<p>Je suis une jeune étudiante en sociologie à l'Université Abdou Moumouni de Niamey.
+							Passionnée de l'informatique , je me suis inscrite à Codeloccol sans aucune connaissance du codage.
+							Dieu merci!En tant que Femme je suis si fiére d'etre dans un domaine dont les gens pensent qu'il n'y a que les hommes qui devront y etre.
+							J'arrive à m'en sortir dans ce qui suit:
+						</p>
+						<ul style="list-style-type:none;">
+							<li>JAVASCRIPT: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>WORDPRESS: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;<span style="color:yellow;">&starf;</span></span></li>
+							<li>JQuery: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>HTML: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>CSS: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li>BOOSTRAP:<span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>	
+						</ul>
+						<p>
+							En savoir plus dans ma section compétences
+						</p>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="contactInfo">
+					<span class="return" onmouseover="hideInfo('contactInfo');">Retour</span>
+					<div class="detailContent">
+						<h1>Mes informations de contact</h1>
+						<ul class="colList">
+							<li>Nom complet:Idrissa Enikoye Haoua</li>
+							<li>Adresse e-mail: <a target="_blank" href="ienikoye@gmail.com">ienikoye@@gmail.com</a></li>
+							<li>Téléphone portable: (+227) 93 33 70 28</li>
+							<li>Facebook: <a target="_blank" href="https://m.facebook.com/home.php?_rdr">https://m.facebook.com/home.php?_rdr</a></li>
+							<li>Github: <a target="_blank" href="https://github.com/haouaenikoye">https://github.com/haouaenikoye</a></li>
+							<li>LinkedIn <a target="_blank" href="https://www.linkedin.com/in/hainikoye/">https://www.linkedin.com/in/hainikoye/e</a></li>
+						</ul>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="skills">
+					<span class="return" onmouseover="hideInfo('skills');">Retour</span>
+					<div class="detailContent">
+						<h1>Mes compétences</h1>
+						<h2>Comment je classe les choses que je peux faire</h2>
+						<p class="noPrint">
+							Survolez ou cliquez sur chaque élément pour voir pourquoi je l'ai noté comme je l'ai fait.
+						</p>
+						<ul class="colList">
+							<li onclick="snackbar($(this)[0].title,10000);" title="Je persiste, je n'abandonnerai pas tant que je n'aurai pas résolu un problème">Résolution de problème:<span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="En tant jeune nigerienne , j'ai eu la chance d'avoir un téléphone depuis l'age de 16 ans c'est qui n'était pas le cas pour certaine ,et je me m'amuse avec l'ordinateur de ma grande soeur,  je peux faire quelques les tâches de base qui me sont demandées.">Fonctionnement de base de l'ordinateur et de téléphone <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="J'éviterai à tout prix de chercher un emploi ailleurs, sauf en ce qui concerne ma stabilité financière">Fidélité: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Donnez-moi une tâche, j'esserai le ferai à votre façon">Suivre l'instruction: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Écouter de la musique ou du Coran m'aide à bloquer les distractions, si je fais cela, je pourrais travailler pendant des heures.">Concentrer(Music ou Coran à fond) : <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Structure. Rien ne me dérange plus que du code désordonné, mais je n'ai jamais de bureau organisé et en cours de route je fais des recherches et je visite les forum sur facebook...">OCD: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="C'est très difficile pour moi de communiquer une idée verbalement. La communication visuelle est ma force">Communication: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Jusqu'à un certain point, je performerai bien sous pression, mais après un certain temps, j'ai tendance à tomber en panne. Habituellement, tout ce dont j'ai besoin est un long week-end, et je suis prêt à y retourner">Travailler sous pressions: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="J'ai fait un bon travail  informatique avant d'etre à Codeloccol, et si je rencontre un défi, je le recherche sur Google.">Fonctionnement de l'ordinateur administratif: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="TDAH (difficultés d'attention et de concentration)dois-je en dire plus?">Concentrer (sans musique de fond): <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Je me déprime facilement, surtout si je fais du travail je n'aime pas">Maîtrise de soi: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Je démarre souvent un projet sans titre, et en le construisant, je pense à des fonctionnalités supplémentaires que j'aimerais utiliser">Planification: <span style="color:yellow;">&starf;</span><span style="color:yellow;">&starf;</span></li>
+							<li onclick="snackbar($(this)[0].title,10000);" title="Si j'ai quelque chose en tête, je ne peux pas arrêter d'y penser, soit je travaillerai tard pour résoudre le problème, soit je passerai toute la nuit à rêver de la solution">Sommeil suffisant: <span style="color:yellow;">&starf;</span></li>
+						</ul>
+						<h2>Systèmes / Langages avec lesquels j'ai travaillé et combien je les aime</h2>
+						<ul class="colList">
+							<li>HTML: <span style="color:blue;">&starf;&starf;&starf;</span></li>
+							<li>CSS: <span style="color:blue">&starf;&starf;</span></li>
+							<li>JQuery: <span style="color:blueviolet;">&starf;&starf;</span></li>
+							<li>JavaScript: <span style="color:blueviolet">&starf;&starf;</span></li>
+							<li>Wordpress: <span style="color:blue">&starf;&starf;&starf;&starf;</span></li>
+						</ul>
+						<div class="iframedReplacer">
+							<h2>Ma personnalité</h2>
+							<ul>
+								<li>La gestion des tâches
+									<p>
+										<strong> Vous avez une compétence extraordinaire pour fixer des objectifs.</strong> suivre les progrès et prendre des initiatives pour améliorer votre travail.
+									Vous avez une capacité extraordinaire à travailler de façon autonome, à établir et à respecter des délais difficiles, à persévérer même en cas d'échec initial et à ne pas vous contenter de «assez bien».
+									Vous avez la capacité de maintenir l'exactitude et l'attention aux détails, la création de rapports et la tenue de registres, la définition d'objectifs et la création de plans pour accomplir le travail, ainsi que la surveillance et le contrôle des ressources.
+									Vous excellez à apprendre ce qui est important pour bien faire le travail et éviter des erreurs coûteuses. Vous êtes également excellent pour comprendre les nouvelles procédures et les expliquer aux autres.
+									</p>
+								</li>
+
+								<br><br><br>
+								<li>La prise de décision
+									<p>
+										<strong>Votre prise de décision est dans le top 15% de l'effectif.</strong> Vous avez une forte compétence pour prendre en charge et motiver les membres du groupe vers des objectifs communs
+										Vous avez la capacité d'être minutieux, délibéré et opportun, et d'avoir le souci du détail.
+                                        Vous êtes disposé à recueillir et à évaluer de manière critique les informations pertinentes, à reconnaître les solutions et à utiliser les faits, la logique et l'expérience pour étayer vos opinions.
+                                        Vous avez une forte capacité à exprimer vos opinions et croyances et une tendance à exercer une domination.
+									</p>
+								</li>
+								
+								<br><br><br>
+								<li>Direction
+									<p>
+										<strong>Votre leadership est dans le top 15% de l'effectif.</strong> Vous avez une forte compétence pour prendre en charge et motiver les membres du groupe vers un objectif commun.
+										Vous avez une capacité extraordinaire à établir des objectifs à court et à long terme, à spécifier les stratégies et les actions pour les atteindre, et vous avez la persévérance pour surmonter les obstacles et les échecs pour atteindre les objectifs.
+                                        Vous avez une forte capacité à exprimer vos croyances et opinions même lorsqu'elles sont contraires à celles des autres, à motiver et à inspirer les autres à s'étendre pour atteindre des objectifs et à exercer votre autorité.
+                                        Vous pouvez tenir les autres informés malgré les délais pressants, faire preuve de tact dans les situations stressantes et faire des compromis pour atteindre les objectifs de l'organisation.
+                                        Vous excellez dans la collecte et l'analyse des informations nécessaires pour fournir une direction efficace à des groupes de personnes. Vous êtes également très doué pour élaborer des plans stratégiques et expliquer aux autres comment réaliser ces plans.
+                                        Vous comprenez généralement ce qu'il faut dire pour motiver les gens à suivre votre direction.
+                                        Vous pouvez reconnaître et gérer positivement les obstacles et les échecs, partager la responsabilité de la direction et du rendement de l'équipe tout en établissant et en maintenant des relations de travail efficaces.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="hobbies">
+					<span class="return" onmouseover="hideInfo('hobbies');">Retour </span>
+					<div class="detailContent">
+						<h1>Mes Loisirs</h1>
+						<h2>Les choses que je fais pendant mon temps libre</h2>
+						<ul class="colList">
+							<li>les recherches le web</li>
+							<li>Apprendre l'imprimerie, la sublimation, le flocage ... <a target="_blank" href="https://m.facebook.com/Bugtique-Ma%C3%AF-2060382947592387/">BugtiqMai</a></li>
+							<br><br><br>
+							<li>Bricolage sur toutes sortes de projets divers</li>
+							<br><br><br>
+							<li>Preparation de mon entreprise Kakandadi et Chocolat( Hainikoye's Chocolat)</li>
+						</ul>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="workExperience">
+					<span class="return" onmouseover="hideInfo('workExperience');">Back </span>
+					<div class="detailContent" syle="text-align:left">
+						<h1>Mon experience professionnelle</h1>
+						<h2>Les travaux  et formations que j'ai fait jusqu'à ce que je trouve ma vocation</h2>
+						<ol style="text-align:left;">
+							<li>
+								<strong> 05 au 07 Novembre 2020 FITIC Forum Interparlementaire TIC de l'espace Cedeao</strong>La 2ème edition du Forum Interparlenentaire de la CEDEAO sur les technologies de l'Information et de la communication qui est regroupé par plusieurs panels au Palais des Congrès de Niamey ainsi que l'ouverture qui a eu lieu Vendredi 06 Novembre 2020 au centre International de Conference Mahatma Gandhi, sous le haut patronage du President de l'Assemblée Nationale du Niger, son Excellence M. Ousseini Tinni.
+								<br><br><br><br>
+								<strong> 29 Octobre 2020 au 04 Novembre 2020 Grande Rencontre Citoyenne</strong>la grande rencontre citoyenne organisée par le ministère de la Renaissance Culturelle, des Arts et de la Modernisation Sociale, en collaboration avec l’association CIMOM. Cette rencontre citoyenne a regroupé autour du chef du gouvernement les jeunes venus de toutes les régions du Niger. Elle vise essentiellement à échanger à bâton rompus sur les aspirations de cette frange de la population qui constitue le socle du développement socio-économique du Niger. L’objectif ultime de cette rencontre historique entre les jeunes et les autorités du pays est de perpétuer cette démarche dans la perspective d’un dialogue intergénérationnel, gage d’une jeunesse responsable résolument engagée pour la paix et la quiétude sociale. La cérémonie de cette rencontre s’est déroulée en présence du ministre de la Renaissance Culturelle, M. Assoumana Mallam Issa ; de l’initiatrice de l’événement en l’occurrence, Mme Kader Rouki, présidente de l’association CIMOM ; des autorités administratives et des représentants du corps diplomatique.
+								<br><br><br><br>
+								<strong> Fevrier 2019 Séminaire sur la pratique du développement personnel </strong>La réussite dans l'action 
+								<br><br><br><br>
+								<strong> Mars 2018 Formation pratique du Logistique office informatique</strong>
+								<br><br><br>
+								<strong> Avril 2014 formation sur la santé et réproduction</strong>
+								<br><br><br>
+								<strong> Juin 2012 Atelier de renforcement des capacités des jeunes scolaires contre les IST/VIH/SIDA</strong>
+								<br><br><br>
+								<strong> 2012_2015 ONG FONDEI MABORI</strong>  Le Port du casques et la ceinture au volan
+								<br><br><br><br>
+								<script>
+									function displayCoreMonitor()
+									{
+										hideInfo('workExperience');
+										displayInfo('projects');
+										window.location.hash='COREmonitor';
+										window.location.hash='';
+									}
+								</script>
+							</li>
+							</ol>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="education">
+					<span class="return" onmouseover="hideInfo('education');">Back </span>
+					<div class="detailContent" syle="text-align:left">
+						 <h1> Langues</h1>
+						<p style="text-align:left">
+							<strong>Anglais</strong><br>
+							<strong>A.D.U</strong><br>
+						</p>
+						<ul class="colList">
+							<li>Francais: Bien</li>
+							<li>Anglais: Passable</li>
+							<li>Zarma:Bien</li>
+							<li>Haoussa:Passable</li>
+
+							<br><br><br>
+
+							<p style="text-align:left">
+							<li>Technologie des applications informatiques: 57%</li>
+							<li>Sciences de la vie: 51%</li>
+						</ul>
+						</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div class="detail" id="projects">
+					<span class="return" onmouseover="hideInfo('projects');">Back </span>
+					<div class="detailContent" syle="text-align:left">
+						<h1>Mes projets</h1>
+						<h2>Une collection de choses que j'ai faites</h2>
+						<p style="text-align:left">
+							<strong>Projets de ma carrière</strong><br>
+							Je ne peux pas fournir de captures d'écran ni de code source de ces projets, car cela enfreindra les politiques de l'entreprise. Cependant, voici une liste de ce que j'ai fait. <br>
+                            (Survolez ou cliquez sur chaque élément pour plus de détails)
+							<ol style="text-align:left">
+								<li>Groupe central intégré
+									<br><br><br>
+									<ol>
+										<li onclick="snackbar($(this)[0].title,15000);" title="227 VOYAGE"> un site maison de voyage(Framework CSS , script jQuery  HTML, CSS)</li>
+										<BR><BR><BR></BR></BR></BR>
+
+										<li onclick="snackbar($(this)[0].title,15000);" title="CATCH ME"> UN JEU qui signifie attrape moi si tu peux!!(JS, HTML, CSS)</li>
+										<br><br><br>
+
+										<li onclick="snackbar($(this)[0].title,15000);" title="SHOPPING CART">SALON DE BEAUTÉ ( JS, HTML, CSS)</li>
+										<br><br><br>
+
+										<li onclick="snackbar($(this)[0].title,15000);" title="HANGMAN"> Hangman Le projet consiste en un petit jeu dans lequel le but est de cliquer en un minimum de temps sur des cibles disposées aléatoirement dans une zone délimitée. Le travail est à réaliser individuellement.Comme l'illustre la figure ci-dessous on identifie différents éléments dans la page HTML. D'abord au centre se trouve la zone où apparaissent les cibles qu'il faudra faire disparaitre par un clic, cet élément a pour id terrain. Ensuite on trouve en haut de la page un premier bouton intitulé Une cible. Un clic sur ce bouton crée une unique cible qui apparaît à une position aléatoire sur le terrain. Enfin, dans la partie inférieure se trouve la zone de contrôle du jeu. On y trouve différents éléments : un champ de saisie numérique pour indiquer le nombre de cibles à créer, un bouton Démarrer qui provoque la création des cibles et le début du jeu, une zone d'affichage du nombre de cibles qu'il reste à cliquer,es cibles créées correspondent à des éléments div de classe CSS target.( JS, HTML, CSS,)</li>
+										<br><br><br>
+
+										<li onclick="snackbar($(this)[0].title,15000);" title="PROVERBES">  Ce projet Quote a pour objectif de citer des proverbes qui font rire. Cette liste de faux proverbes présente de faux proverbes, détournés ou forgés par leurs auteurs à des fins humoristiques.( JS, HTML, CSS, )</li>
+										<br><br><br>
+
+										<li onclick="snackbar($(this)[0].title,15000);" title="RGB COULEUR"> Dans cette nouvelle leçon, nous allons apprendre à modifier la couleur et l’opacité de nos textes grâce à la propriété color que nous avons déjà rencontré précédemment. Cette propriété est à la fois très simple à utiliser et relativement complexe à parfaitement maitriser car nous allons lui passer des valeurs de couleurs très différentes les unes des autres. RGB Master La propriété couleur va en effet pouvoir accepter des valeurs comme : Un nom de couleur (en anglais) ; Une notation hexadécimale ; Une notation RGB ou RGBa ; Une notation HSL ou HSLa. Toutes ces notations vont nous permettre, en fin, d’attribuer une couleur particulière à notre texte. Le but de cette leçon est de comprendre comment chaque type de valeur fonctionne et les avantages et inconvénients de chacun. Il y a des années de cela, les langages de programmation ne disposaient pas de toutes les fonctionnalités d’aujourd’hui tout simplement car les infrastructures étaient beaucoup moins puissantes que de nos jours. Ainsi, au départ, seules 16 couleurs ont été normalisées en CSS(JS, HTML, CSS)</li>
+
+										<br><br><br>
+										<li onclick="snackbar($(this)[0].title,15000);" title="BUDGET"> L'objectif de ce projet est d'enseigner aux débutants l'apprentissage de JavaScript, comment utiliser un objet JavaScript, la déclaration et l'invocation de fonctions JavaScript, et la manipulation du DOM JavaScript. Avant de commencer, comprenons ce qu'est un budget. La raison en est que cela m'aide à planifier le flux de travail du projet et la manière dont le projet sera réalisé. Nous avons compris ce qu'est le budget, en pensant maintenant à ce qu'est une application budgétaire? Nous dirons qu'une application budgétaire est une application qui prend un montant budgétaire et nous aide à planifier ou à ventiler nos dépenses à partir du montant budgétaire. C'est pour ca nous avons créer une application budgétaire qui permet à l'utilisateur d'ajouter un montant budgétaire, de répertorier ses dépenses à partir du montant budgétaire, d'obtenir le solde total après avoir dressé la liste des dépenses, de modifier une dépense et de supprimer une dépense.( JS, HTML, CSS)</li>
+
+										<br><br><br>
+										<li onclick="snackbar($(this)[0].title,15000);" title="ELEMENTOR"> Réaliser un projet avec Elementor. Elementor est un constructeur de page qui vous permet de créer des pages professionnelles à une vitesse trés large, et tout ceci en direct sur notre blog. Le plugin est gratuit et disponible dans le répertoire de plugin WordPress.C'est un travail trés compliqué qui demander d'étre attentive et patiente sinon j'ai failli passer à coté, ce travail m'a pris presque un moi. Dans ce projet j'ai eu a m'exprimer sur la place des femmes dans le digital.Une femme digitale travaille dans le secteur du numérique. L’idée est donc très large : une femme digitale peut être entrepreneure, intrapreneure, influenceuse, blogueuse, social media manager, community manager, designer, info-graphiste, etc. Une femme digitale est avant tout, pour moi, une femme connectée : elle utilise internet, la technologie, les réseaux sociaux, pour se faire entendre, ou même changer le monde avec un projet innovant. Car une femme digitale est une femme libre, qui ose, innove, veut changer les choses. Elle ose (enfin) s’exprimer, n’a pas peur d’être ambitieuse, et utilise le numérique pour se faire entendre. En tant que Femme j'ai jugé utile d'aborder ce theme.(ELEMENTOR ,HTML, CSS, )</li>
+										
+										<br><br><br>
+										<li id="COREmonitor" onclick="snackbar($(this)[0].title,15000);" title="BLOG"> Ce travail consiste à faire une Blog. Le blog est un type de site Internet particulier qui peut être présenté comme une sorte de journal intime publié , et accessible aux internautes du monde entier. Il s'agit d'une version simplifiée d'un site internet, proposée aux internautes, et gérée techniquement par un éditeur. Là , j'ai eu chaud deux semaines sans avoir un theme a choisir, ni meme avoir une idée de comment debuter. l'idée qui met traversé la tete est le Thé, beaucoup en consomment sans connaitre ses vertus , les avantages ainsi que ses inconvenients. Ainsi à travers mon Blog j'ai eu a preciser quelques uns. Faites y un Tours Merci(HTML, CSS,)
+										</li>
+									</ol>
+								</li>
+							</ol>
+						<p style="text-align:left">
+							<strong>Projets réalisés en ma qualité</strong>
+						</p>
+						<ol style="text-align:left">
+							<li>
+								<a target="_blank" href="https://github.com/haouaenikoye">Github</a><br>
+								<div id="githubRepos"></div>
+								<script>
+var result = "";
+$.ajax({
+	url:"https://github.com/haouaenikoye",
+	async: false,
+	success:function(data) {
+		handleRepos(data); 
+	}
+ });
+
+function handleRepos(data)
+{
+	result = "<ol>";
+	for(i=0;i<data.length;i++)
+	{
+		result = result + "<li onclick=\"snackbar($(this)[0].title,15000);\" title=\"" + data[i]['description'] +"\"><a href=\"" + data[i]['html_url'] + "\" target=\"_blank\">" + data[i]['name'] + "</a><br><strong>Languages:</strong>";
+		$.ajax({
+			async: false,
+			url: data[i]['languages_url'],
+			success: function(msg){
+				result = result + "<ul>";
+				var total = 0;
+				var language;
+				for(language in msg)
+				{
+					amount = msg[language];
+					total += msg[language];
+				}
+				for(language in msg)
+				{
+					percent = ((msg[language]/total) * 100).toFixed(2);
+					result = result + "<li>" + language + ": " + percent + "%</li>";
+				}
+				result = result + "</ul>";
+			}
+		});
+		result = result + "</li>"
+	}
+	result = result + "</ol>"
+	document.getElementById('githubRepos').innerHTML = result;
+}
+								</script>
+							</li>
+						</ol>
+					</div>
+					<div class="detailScroller"></div>
+				</div>
+				<div id="assets">
+					<div id="snackbarContainer" style="display: none;">
+						<div id="snackbar"></div>
+					</div>
+					<div id="playerMover">
+					<div id="playerRotator">
+						<div id="player" class="playerOpen"></div>
+					</div>
+				</div>
+					<div id="guideMover">
+						<div id="sharkRotator">
+							<div id="guide"  onmouseover="lunch();" class="guideOpen"></div>
+						</div>
+					</div>
+					<div id="lifesaverContainer">
+						<div class="lifesaver" onmouseover="displayInfo('basicInfo');" id="ring_basicInfo">
+							<div>Information<br>essentielle</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('skills');" id="ring_skills">
+							<div>Compétence</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('hobbies');" id="ring_hobbies">
+							<div>Passe-tempss</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('workExperience');" id="ring_workExperience">
+							<div style="font-size:0.7em;">Travail<br>Experiences</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('education');" id="ring_education">
+							<div>Compétences</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('projects');" id="ring_projects">
+							<div>Projets</div>
+						</div>
+						<div class="lifesaver" onmouseover="displayInfo('contactInfo');" id="ring_contactInfo">
+							<div>Contacte<br>Information</div>
+						</div>
+					</div>
+					<!--BUBBLES--><div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+						<div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div><div class="bubbles"></div>
+					</div>
+					<!--FISH--><div>
+						<div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div>
+						<div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div><div class="mover"><div class="rotator"><div class="jellyfish"></div></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script>
+moveBubbles();
+moverole();
+setInterval(function(){
+if($(window).innerWidth() >= 600)
+{
+	var player = document.getElementById('player');
+	if(player.className == 'playerOpen')
+	{
+		player.className = 'playerClosed';
+	}
+	else
+	{
+		player.className = 'playerOpen';
+	}
+	var guide = document.getElementById('guide');
+	if(guide.className == 'guideOpen')
+	{
+		guide.className = 'guideClosed';
+	}
+	else
+	{
+		guide.className = 'guideOpen';
+	}
+}
+},250);
+setInterval(function(){moveBubbles();},4000);
+setInterval(function(){moveJellyfish();flashReturn();},2000);
+
+	</script>
+	</body>
+</html>
